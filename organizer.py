@@ -19,16 +19,17 @@ def organize_files_to_folders():
             os.rename(os.path.join(folder_path,file), os.path.join(folder_path,"OTHERS",file))
 
 if __name__ == "__main__":
-    folder_path = "C:/Users/ondra/test_folder"
+    folder_path = "C:/Users/ondra/Downloads"
 
     file_types = {
+        "CONFIGS" : (".json", ".xml", ".yaml", ".yml", ".config.json"),
         "DOCUMENTS" : (".pdf", ".doc", ".docx", ".rtf", ".txt", ".tex"),
-        "AUDIO" : (".mp3", ".wav", ".wma", ".aac", ".flac"),
+        "AUDIO" : (".mp3", ".wav", ".wma", ".aac", ".flac", ".m4a"),
         "VIDEOS" : (".mp4", ".mkv", ".avi", ".mov", ".flv", ".wmv", ".3gp"),
-        "IMAGES" : (".jpg", ".jpeg", ".png", ".gif", ".bmp", ".svg"),
+        "IMAGES" : (".jpg", ".jpeg", ".png", ".gif", ".bmp", ".svg", ".webp"),
         "PRESENTATIONS" : (".ppt", ".pptx", ".odp"),
         "SPREADSHEETS" : (".xls", ".xlsx", ".ods"),
-        "SCRIPTS" : (".py", ".js", ".sh", ".bat", ".ps1"),
+        "SCRIPTS" : (".sh", ".bat", ".ps1"),
         "WEB" : (".html", ".css", ".php"),
         "ARCHIVES" : (".zip", ".rar", ".7z", ".tar", ".gz", ".bz2"),
         "EXECUTABLES" : (".exe", ".msi"),
